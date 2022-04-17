@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- CARGADOR -->
+    <div class="preloader">
+      <img src="./preloader.gif" alt="cargando" />
+    </div>
+    <header>
+      <video class="video-container" muted autoplay loop>
+        <source src="./video.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Esta en header::after  se sobrepone al video con el z-index-->
+      <h1>video project</h1>
+
+      <!-- Boton switch -->
+      <button class="switch-btn">
+        <span>play</span>
+        <span>pause</span>
+        <span class="switch"></span>
+      </button>
+    </header>
+    <script src="app.js"></script>
+  </body>
+</html>
